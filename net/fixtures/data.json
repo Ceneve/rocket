@@ -1,0 +1,356 @@
+[
+    {
+        "model": "net.Net",
+        "pk": 1,
+        "fields": {
+            "type": "Factory",
+            "parent": null
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 2,
+        "fields": {
+            "type": "Factory",
+            "parent": null
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 3,
+        "fields": {
+            "type": "Factory",
+            "parent": null
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 4,
+        "fields": {
+            "type": "Factory",
+            "parent": null
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 5,
+        "fields": {
+            "type": "Factory",
+            "parent": null
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 6,
+        "fields": {
+            "type": "Distributor",
+            "parent": 1
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 7,
+        "fields": {
+            "type": "Distributor",
+            "parent": 2
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 8,
+        "fields": {
+            "type": "Distributor",
+            "parent": 3
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 9,
+        "fields": {
+            "type": "Distributor",
+            "parent": 4
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 10,
+        "fields": {
+            "type": "Distributor",
+            "parent": 5
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 11,
+        "fields": {
+            "type": "Dealership",
+            "parent": 6
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 12,
+        "fields": {
+            "type": "Dealership",
+            "parent": 7
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 13,
+        "fields": {
+            "type": "Dealership",
+            "parent": 8
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 14,
+        "fields": {
+            "type": "Dealership",
+            "parent": 9
+        }
+    },
+      {
+        "model": "net.Net",
+        "pk": 15,
+        "fields": {
+            "type": "Dealership",
+            "parent": 10
+        }
+    },
+        {
+        "model": "net.Net",
+        "pk": 16,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 11
+        }
+    },
+          {
+        "model": "net.Net",
+        "pk": 17,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 12
+        }
+    },
+          {
+        "model": "net.Net",
+        "pk": 18,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 13
+        }
+    },
+          {
+        "model": "net.Net",
+        "pk": 19,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 14
+        }
+    },
+          {
+        "model": "net.Net",
+        "pk": 20,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 15
+        }
+    },
+  {
+        "model": "net.Net",
+        "pk": 21,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 16
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 22,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 17
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 23,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 18
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 24,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 19
+        }
+    },
+    {
+        "model": "net.Net",
+        "pk": 25,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 20
+        }
+    },
+      {
+        "model": "net.Product",
+        "pk": 1,
+        "fields": {
+            "product_name": "Super Flower Leadex V Platinum Pro 850W SF-850F14TP",
+            "product_model": "Блок питания",
+            "product_launch_date": "2017-10-25"
+        }
+    },
+        {
+        "model": "net.Product",
+        "pk": 2,
+        "fields": {
+            "product_name": "DeepCool PK800D",
+            "product_model": "Блок питания",
+            "product_launch_date": "2019-12-10"
+        }
+    },
+        {
+        "model": "net.Product",
+        "pk": 3,
+        "fields": {
+            "product_name": "DeepCool PF750",
+            "product_model": "Блок питания",
+            "product_launch_date": "2018-01-04"
+        }
+    },
+  {
+        "model": "net.Product",
+        "pk": 4,
+        "fields": {
+            "product_name": "Sony NWZ-B183F 4GB",
+            "product_model": "Плеер MP3",
+            "product_launch_date": "2016-01-03"
+        }
+    },
+    {
+        "model": "net.Product",
+        "pk": 5,
+        "fields": {
+            "product_name": "Digma Z4 16GB",
+            "product_model": "Плеер MP3",
+            "product_launch_date": "2018-02-05"
+        }
+    },
+    {
+        "model": "net.Product",
+        "pk": 6,
+        "fields": {
+            "product_name": "Digma U3 4GB",
+            "product_model": "Плеер MP3",
+            "product_launch_date": "2018-06-12"
+        }
+    },
+      {
+        "model": "net.Product",
+        "pk": 7,
+        "fields": {
+            "product_name": "Xiaomi Watch S1 Active",
+            "product_model": "Умные часы",
+            "product_launch_date": "2018-06-12"
+        }
+    },
+        {
+        "model": "net.Product",
+        "pk": 8,
+        "fields": {
+            "product_name": "Samsung Galaxy Watch4 40мм",
+            "product_model": "Умные часы",
+            "product_launch_date": "2014-05-11"
+        }
+    },
+        {
+        "model": "net.Product",
+        "pk": 9,
+        "fields": {
+            "product_name": "Apple Watch Series 7 45 мм",
+            "product_model": "Умные часы",
+            "product_launch_date": "2020-05-12"
+        }
+    },
+    {
+        "model": "net.Product",
+        "pk": 10,
+        "fields": {
+            "product_name": "Sony Alpha a7 III Body",
+            "product_model": "Беззеркальный фотоаппарат",
+            "product_launch_date": "2015-01-12"
+        }
+    },
+      {
+        "model": "net.Product",
+        "pk": 11,
+        "fields": {
+            "product_name": "Canon EOS 5D Mark IV Body",
+            "product_model": "Беззеркальный фотоаппарат",
+            "product_launch_date": "2016-03-14"
+        }
+    },
+      {
+        "model": "net.Product",
+        "pk": 12,
+        "fields": {
+            "product_name": "Canon EOS RP Body",
+            "product_model": "Беззеркальный фотоаппарат",
+            "product_launch_date": "2019-08-11"
+        }
+    },
+  {
+        "model": "net.Product",
+        "pk": 13,
+        "fields": {
+            "product_name": "PocketBook 617",
+            "product_model": "Электронная книга",
+            "product_launch_date": "2013-02-11"
+        }
+    },
+    {
+        "model": "net.Product",
+        "pk": 14,
+        "fields": {
+            "product_name": "Amazon Kindle Paperwhite 2021",
+            "product_model": "Электронная книга",
+            "product_launch_date": "2014-05-11"
+        }
+    },
+  {
+        "model": "net.Product",
+        "pk": 15,
+        "fields": {
+            "product_name": "Amazon Kindle 2019 8GB",
+            "product_model": "Электронная книга",
+            "product_launch_date": "2021-04-10"
+        }
+    },
+    {
+        "model": "net.Factory",
+        "pk": 1,
+        "fields": {
+            "name": "Factory 1",
+            "email": "factory1@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "53",
+            "employees": "Employer name",
+            "net_type": 1,
+            "debt": 0,
+            "products": [1,2],
+            "pub_date": "2021-04-10"
+        }
+    }
+
+
+]
