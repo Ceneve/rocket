@@ -1,204 +1,4 @@
 [
-    {
-        "model": "net.Net",
-        "pk": 1,
-        "fields": {
-            "type": "Factory",
-            "parent": null
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 2,
-        "fields": {
-            "type": "Factory",
-            "parent": null
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 3,
-        "fields": {
-            "type": "Factory",
-            "parent": null
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 4,
-        "fields": {
-            "type": "Factory",
-            "parent": null
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 5,
-        "fields": {
-            "type": "Factory",
-            "parent": null
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 6,
-        "fields": {
-            "type": "Distributor",
-            "parent": 1
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 7,
-        "fields": {
-            "type": "Distributor",
-            "parent": 2
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 8,
-        "fields": {
-            "type": "Distributor",
-            "parent": 3
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 9,
-        "fields": {
-            "type": "Distributor",
-            "parent": 4
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 10,
-        "fields": {
-            "type": "Distributor",
-            "parent": 5
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 11,
-        "fields": {
-            "type": "Dealership",
-            "parent": 6
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 12,
-        "fields": {
-            "type": "Dealership",
-            "parent": 7
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 13,
-        "fields": {
-            "type": "Dealership",
-            "parent": 8
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 14,
-        "fields": {
-            "type": "Dealership",
-            "parent": 9
-        }
-    },
-      {
-        "model": "net.Net",
-        "pk": 15,
-        "fields": {
-            "type": "Dealership",
-            "parent": 10
-        }
-    },
-        {
-        "model": "net.Net",
-        "pk": 16,
-        "fields": {
-            "type": "LargeRetailChain",
-            "parent": 11
-        }
-    },
-          {
-        "model": "net.Net",
-        "pk": 17,
-        "fields": {
-            "type": "LargeRetailChain",
-            "parent": 12
-        }
-    },
-          {
-        "model": "net.Net",
-        "pk": 18,
-        "fields": {
-            "type": "LargeRetailChain",
-            "parent": 13
-        }
-    },
-          {
-        "model": "net.Net",
-        "pk": 19,
-        "fields": {
-            "type": "LargeRetailChain",
-            "parent": 14
-        }
-    },
-          {
-        "model": "net.Net",
-        "pk": 20,
-        "fields": {
-            "type": "LargeRetailChain",
-            "parent": 15
-        }
-    },
-  {
-        "model": "net.Net",
-        "pk": 21,
-        "fields": {
-            "type": "IndividualEntrepreneur",
-            "parent": 16
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 22,
-        "fields": {
-            "type": "IndividualEntrepreneur",
-            "parent": 17
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 23,
-        "fields": {
-            "type": "IndividualEntrepreneur",
-            "parent": 18
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 24,
-        "fields": {
-            "type": "IndividualEntrepreneur",
-            "parent": 19
-        }
-    },
-    {
-        "model": "net.Net",
-        "pk": 25,
-        "fields": {
-            "type": "IndividualEntrepreneur",
-            "parent": 20
-        }
-    },
       {
         "model": "net.Product",
         "pk": 1,
@@ -335,9 +135,11 @@
         }
     },
     {
-        "model": "net.Factory",
+        "model": "net.Network",
         "pk": 1,
         "fields": {
+            "type": "Factory",
+            "parent": null,
             "name": "Factory 1",
             "email": "factory1@gmail.com",
             "country": "Belarus",
@@ -345,12 +147,442 @@
             "street": "street_name",
             "house_number": "53",
             "employees": "Employer name",
-            "net_type": 1,
             "debt": 0,
-            "products": [1,2],
+            "products": [1,2,4,5,6,7,8,9],
             "pub_date": "2021-04-10"
         }
+    },
+      {
+        "model": "net.Network",
+        "pk": 2,
+        "fields": {
+            "type": "Factory",
+            "parent": null,
+            "name": "Factory 2",
+            "email": "factory2@gmail.com",
+            "country": "Belarus",
+            "city": "Gomel",
+            "street": "street_name",
+            "house_number": "54",
+            "employees": "Employer name",
+            "debt": 0,
+            "products": [3,4,8,13,15],
+            "pub_date": "2021-05-12"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 3,
+        "fields": {
+            "type": "Factory",
+            "parent": null,
+            "name": "Factory 3",
+            "email": "factory3@gmail.com",
+            "country": "Belarus",
+            "city": "Mogilev",
+            "street": "street_name",
+            "house_number": "55",
+            "employees": "Employer name",
+            "debt": 0,
+            "products": [1,4,12,3,11,12],
+            "pub_date": "2021-05-12"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 4,
+        "fields": {
+            "type": "Factory",
+            "parent": null,
+            "name": "Factory 4",
+            "email": "factory4@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "55",
+            "employees": "Employer name",
+            "debt": 0,
+            "products": [5,6,11,9,12],
+            "pub_date": "2020-07-03"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 5,
+        "fields": {
+            "type": "Factory",
+            "parent": null,
+            "name": "Factory 5",
+            "email": "factory5@gmail.com",
+            "country": "Belarus",
+            "city": "Mogilev",
+            "street": "street_name",
+            "house_number": "58",
+            "employees": "Employer name",
+            "debt": 0,
+            "products": [2,3,4,5],
+            "pub_date": "2021-02-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 6,
+        "fields": {
+            "type": "Distributor",
+            "parent": 1,
+            "name": "Distributor 1",
+            "email": "Distributor1@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "44",
+            "employees": "Employer name",
+            "debt": 24321.41,
+            "products": [3,4,5],
+            "pub_date": "2021-02-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 7,
+        "fields": {
+            "type": "Distributor",
+            "parent": 2,
+            "name": "Distributor 2",
+            "email": "Distributor2@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "45",
+            "employees": "Employer name",
+            "debt": 31234.2,
+            "products": [3,4,8],
+            "pub_date": "2021-12-03"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 8,
+        "fields": {
+            "type": "Distributor",
+            "parent": 3,
+            "name": "Distributor 3",
+            "email": "Distributor3@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "45",
+            "employees": "Employer name",
+            "debt": 22.04,
+            "products": [1,3,12],
+            "pub_date": "2021-02-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 9,
+        "fields": {
+            "type": "Distributor",
+            "parent": 4,
+            "name": "Distributor 4",
+            "email": "Distributor4@gmail.com",
+            "country": "Belarus",
+            "city": "Gomel",
+            "street": "street_name",
+            "house_number": "42",
+            "employees": "Employer name",
+            "debt": 3214231.2,
+            "products": [5,6,9,11],
+            "pub_date": "2021-11-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 10,
+        "fields": {
+            "type": "Distributor",
+            "parent": 5,
+            "name": "Distributor 5",
+            "email": "Distributor5@gmail.com",
+            "country": "Belarus",
+            "city": "Mogilev",
+            "street": "street_name",
+            "house_number": "42",
+            "employees": "Employer name",
+            "debt": 321421.4,
+            "products": [5,6,9,11],
+            "pub_date": "2021-11-03"
+        }
+    },
+      {
+        "model": "net.Network",
+        "pk": 11,
+        "fields": {
+            "type": "Dealership",
+            "parent": 6,
+            "name": "Dealership 1",
+            "email": "Distributor1@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "42",
+            "employees": "Employer name",
+            "debt": 321.2,
+            "products": [3,4,5],
+            "pub_date": "2021-11-03"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 12,
+        "fields": {
+            "type": "Dealership",
+            "parent": 7,
+            "name": "Dealership 2",
+            "email": "Distributor2@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "41",
+            "employees": "Employer name",
+            "debt": 821.2,
+            "products": [3,4,8],
+            "pub_date": "2021-10-13"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 13,
+        "fields": {
+            "type": "Dealership",
+            "parent": 8,
+            "name": "Dealership 3",
+            "email": "Distributor3@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "41",
+            "employees": "Employer name",
+            "debt": 1821.4,
+            "products": [1,3,12],
+            "pub_date": "2022-06-13"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 14,
+        "fields": {
+            "type": "Dealership",
+            "parent": 9,
+            "name": "Dealership 4",
+            "email": "Distributor4@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 1003.5,
+            "products": [1,3,12],
+            "pub_date": "2022-02-13"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 15,
+        "fields": {
+            "type": "Dealership",
+            "parent": 10,
+            "name": "Dealership 5",
+            "email": "Distributor5@gmail.com",
+            "country": "Belarus",
+            "city": "Gomel",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 10023.5,
+            "products": [5,6,9,11],
+            "pub_date": "2022-10-13"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 16,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 11,
+            "name": "LargeRetailChain 1",
+            "email": "LargeRetailChain1@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 1001.5,
+            "products": [3,4,5],
+            "pub_date": "2022-04-13"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 17,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 12,
+            "name": "LargeRetailChain 2",
+            "email": "LargeRetailChain2@gmail.com",
+            "country": "Belarus",
+            "city": "Mogilev",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 5432.5,
+            "products": [3,4,8],
+            "pub_date": "2022-02-13"
+        }
+    },
+      {
+        "model": "net.Network",
+        "pk": 18,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 13,
+            "name": "LargeRetailChain 3",
+            "email": "LargeRetailChain3@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 532.5,
+            "products": [1,3,12],
+            "pub_date": "2022-02-13"
+        }
+    },
+       {
+        "model": "net.Network",
+        "pk": 19,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 14,
+            "name": "LargeRetailChain 4",
+            "email": "LargeRetailChain4@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 223.5,
+            "products": [1,3,12],
+            "pub_date": "2022-03-13"
+        }
+    },
+      {
+        "model": "net.Network",
+        "pk": 20,
+        "fields": {
+            "type": "LargeRetailChain",
+            "parent": 15,
+            "name": "LargeRetailChain 5",
+            "email": "LargeRetailChain5@gmail.com",
+            "country": "Belarus",
+            "city": "Gomel",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 12223.5,
+            "products": [5,6,9,11],
+            "pub_date": "2022-01-03"
+        }
+    },
+        {
+        "model": "net.Network",
+        "pk": 21,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 16,
+            "name": "IndividualEntrepreneur 1",
+            "email": "IndividualEntrepreneur1@gmail.com",
+            "country": "Belarus",
+            "city": "Gomel",
+            "street": "street_name",
+            "house_number": "28",
+            "employees": "Employer name",
+            "debt": 2135.5,
+            "products": [3,4,5],
+            "pub_date": "2022-02-03"
+        }
+    },
+  {
+        "model": "net.Network",
+        "pk": 22,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 17,
+            "name": "IndividualEntrepreneur 2",
+            "email": "IndividualEntrepreneur2@gmail.com",
+            "country": "Belarus",
+            "city": "Minsk",
+            "street": "street_name",
+            "house_number": "18",
+            "employees": "Employer name",
+            "debt": 213235.5,
+            "products": [3,4],
+            "pub_date": "2022-02-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 23,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 18,
+            "name": "IndividualEntrepreneur 3",
+            "email": "IndividualEntrepreneur3@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "12",
+            "employees": "Employer name",
+            "debt": 2135.5,
+            "products": [1,3,12],
+            "pub_date": "2022-05-03"
+        }
+    },
+      {
+        "model": "net.Network",
+        "pk": 24,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 19,
+            "name": "IndividualEntrepreneur 4",
+            "email": "IndividualEntrepreneur4@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "12",
+            "employees": "Employer name",
+            "debt": 2133215.5,
+            "products": [1,3,12],
+            "pub_date": "2022-05-03"
+        }
+    },
+    {
+        "model": "net.Network",
+        "pk": 25,
+        "fields": {
+            "type": "IndividualEntrepreneur",
+            "parent": 20,
+            "name": "IndividualEntrepreneur 5",
+            "email": "IndividualEntrepreneur5@gmail.com",
+            "country": "Russia",
+            "city": "Moscow",
+            "street": "street_name",
+            "house_number": "12",
+            "employees": "Employer name",
+            "debt": 2133215.5,
+            "products": [5,6,9],
+            "pub_date": "2022-06-02"
+        }
     }
-
 
 ]
