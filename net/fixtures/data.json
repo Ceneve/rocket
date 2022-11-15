@@ -3,7 +3,7 @@
         "model": "net.Product",
         "pk": 1,
         "fields": {
-            "product_name": "Super Flower Leadex V Platinum Pro 850W SF-850F14TP",
+            "product_name": "SF-850F14TP",
             "product_model": "Блок питания",
             "product_launch_date": "2017-10-25"
         }
@@ -30,7 +30,7 @@
         "model": "net.Product",
         "pk": 4,
         "fields": {
-            "product_name": "Sony NWZ-B183F 4GB",
+            "product_name": "Sony NWZ-B183F",
             "product_model": "Плеер MP3",
             "product_launch_date": "2016-01-03"
         }
@@ -57,7 +57,7 @@
         "model": "net.Product",
         "pk": 7,
         "fields": {
-            "product_name": "Xiaomi Watch S1 Active",
+            "product_name": "Xiaomi S1 Active",
             "product_model": "Умные часы",
             "product_launch_date": "2018-06-12"
         }
@@ -66,7 +66,7 @@
         "model": "net.Product",
         "pk": 8,
         "fields": {
-            "product_name": "Samsung Galaxy Watch4 40мм",
+            "product_name": "Samsung Galaxy Watch4",
             "product_model": "Умные часы",
             "product_launch_date": "2014-05-11"
         }
@@ -75,7 +75,7 @@
         "model": "net.Product",
         "pk": 9,
         "fields": {
-            "product_name": "Apple Watch Series 7 45 мм",
+            "product_name": "Apple Watch Series 7",
             "product_model": "Умные часы",
             "product_launch_date": "2020-05-12"
         }
@@ -84,7 +84,7 @@
         "model": "net.Product",
         "pk": 10,
         "fields": {
-            "product_name": "Sony Alpha a7 III Body",
+            "product_name": "Sony Alpha a7",
             "product_model": "Беззеркальный фотоаппарат",
             "product_launch_date": "2015-01-12"
         }
@@ -93,7 +93,7 @@
         "model": "net.Product",
         "pk": 11,
         "fields": {
-            "product_name": "Canon EOS 5D Mark IV Body",
+            "product_name": "Canon EOS 5D",
             "product_model": "Беззеркальный фотоаппарат",
             "product_launch_date": "2016-03-14"
         }
@@ -102,7 +102,7 @@
         "model": "net.Product",
         "pk": 12,
         "fields": {
-            "product_name": "Canon EOS RP Body",
+            "product_name": "Canon EOS RP",
             "product_model": "Беззеркальный фотоаппарат",
             "product_launch_date": "2019-08-11"
         }
@@ -120,7 +120,7 @@
         "model": "net.Product",
         "pk": 14,
         "fields": {
-            "product_name": "Amazon Kindle Paperwhite 2021",
+            "product_name": "Amazon Kindle Paperwhite",
             "product_model": "Электронная книга",
             "product_launch_date": "2014-05-11"
         }
@@ -129,7 +129,7 @@
         "model": "net.Product",
         "pk": 15,
         "fields": {
-            "product_name": "Amazon Kindle 2019 8GB",
+            "product_name": "Amazon Kindle 2019",
             "product_model": "Электронная книга",
             "product_launch_date": "2021-04-10"
         }

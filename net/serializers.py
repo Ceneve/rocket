@@ -4,6 +4,7 @@ from .models import Product, Network
 
 
 class ProductSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
     product_name = serializers.CharField(max_length=25)
     product_model = serializers.CharField()
     product_launch_date = serializers.DateField()
@@ -22,6 +23,7 @@ class ProductSerializer(serializers.Serializer):
 class NetworkSerializer(serializers.Serializer):
     type = serializers.CharField()
     name = serializers.CharField(max_length=50)
+    parent = serializers.PrimaryKeyRelatedField(queryset=Network.objects.all(), allow_null=True)
     email = serializers.CharField()
     country = serializers.CharField()
     city = serializers.CharField()
@@ -29,20 +31,45 @@ class NetworkSerializer(serializers.Serializer):
     house_number = serializers.CharField()
     employees = serializers.CharField()
     debt = serializers.FloatField()
+    pub_date = serializers.DateTimeField()
     products = ProductSerializer(many=True)
 
+    def get_or_create_products(self, products):
+        products_ids = []
+        for product in products:
+            products_instance, created = Product.objects.get_or_create(pk=product.get('id'), defaults=product)
+            products_ids.append(products_instance.pk)
+        return products_ids
+
+    def create_or_update_products(self, products):
+        products_ids = []
+        for product in products:
+            products_instance, created = Product.objects.update_or_create(pk=product.get('id'), defaults=product)
+            products_ids.append(products_instance.pk)
+        return products_ids
+
     def create(self, validated_data):
-        return Network.objects.create(**validated_data)
+        product = validated_data.pop('products', [])
+        network = Network.objects.create(**validated_data)
+        network.products.set(self.get_or_create_products(product))
+        return network
 
     def update(self, instance, validated_data):
-        instance.type = validated_data.get('type', instance.type)
-        instance.name = validated_data.get('name', instance.name)
-        instance.email = validated_data.get('email', instance.email)
-        instance.country = validated_data.get('country', instance.country)
-        instance.city = validated_data.get('city', instance.city)
-        instance.street = validated_data.get('street', instance.street)
-        instance.house_number = validated_data.get('house_number', instance.house_number)
-        instance.employees = validated_data.get('employees', instance.employees)
-        instance.products = validated_data.get('products', instance.products)
+        product = validated_data.pop('products', [])
+        instance.products.set(self.create_or_update_products(product))
+        fields = [
+            'type', 'name', 'parent', 'email', 'country', 'city',
+            'street', 'house_number', 'employees', 'debt', 'pub_date', 'products'
+        ]
+        for field in fields:
+            try:
+                setattr(instance, field, validated_data[field])
+            except KeyError:
+                pass
         instance.save()
         return instance
+
+    def validate_debt(self, value):
+        if self.instance and value != self.instance.debt:
+            raise serializers.ValidationError("Change of debt is prohibited.")
+        return value
